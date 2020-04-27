@@ -85,13 +85,25 @@ def test_xxx_to_30():
     assert roman_to_integer("XXX") == 30
 
 
+def test_xlv_to_45():
+    assert roman_to_integer("XLV") == 45
+
+
 def test_lviii_to_58():
     assert roman_to_integer("LVIII") == 58
+
+
+def test_xc_to_90():
+    assert roman_to_integer("XC") == 90
 
 
 def test_c_to_100():
     assert roman_to_integer("C") == 100
 
 
-# def test_mcmxciv_to_1994():
-#     assert roman_to_integer("MCMXCIV") == 1994
+def test_mcm_to_1900():
+    assert roman_to_integer("MCM") == 1900
+
+
+def test_mcmxciv_to_1994():
+    assert roman_to_integer("MCMXCIV") == 1994
